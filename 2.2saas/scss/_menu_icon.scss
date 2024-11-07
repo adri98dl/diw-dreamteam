@@ -1,0 +1,27 @@
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    &:not(#menu-toggle:active) {
+      ul {
+        display: none;
+      }
+    }
+    &:active(#menu-toggle){
+      ul {
+        display: block;
+      }
+    }
+  }
+}

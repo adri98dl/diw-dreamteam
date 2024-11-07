@@ -1,0 +1,65 @@
+@use 'variables';
+@use 'mixin';
+@use 'menu_icon';
+nav {
+  @include mixin.color-textoFondo(variables.$color-hover, variables.$color-iluminar);
+  position: absolute;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul {
+  width: 100%;
+  height: 32px;
+  @include mixin.color-textoFondo(variables.$color-hover, variables.$gris);
+}
+
+/* Categoría */
+.categoria {
+  float: left;
+}
+
+nav a {
+  @include mixin.color-textoFondo(variables.$color-hover, variables.$gris);
+  text-decoration: none;
+  width: 160px;
+  padding: 7px 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+nav a:hover {
+  @include mixin.color-textoFondo(variables.$color-hover, variables.$color-iluminar);
+  @include mixin.animaciones-nav(iluminar, 0.4s);
+}
+
+/* Submenu */
+.submenu {
+  @include mixin.transiciones-nav(height, 0.5s);
+  position: absolute;
+  overflow: hidden;
+  height: 0px;
+}
+
+.categoria > a {
+  @include mixin.transiciones-nav(padding, 0.5s, ease-out);
+}
+
+.categoria:hover > a {
+  padding: 10px 20px;
+}
+
+.categoria:hover .submenu {
+  height: 100px;
+}
