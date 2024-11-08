@@ -4,11 +4,13 @@
   cursor: pointer;
   padding-left: 0.5em;
 }
+
 #menu-toggle {
   display: none;
 }
 
 @media (max-width: 768px) {
+
   .menu-icon {
     display: block;
   }
@@ -19,10 +21,11 @@
         display: none;
       }
     }
-    #menu-toggle:checked ~ ul {
+
+    #menu-toggle:checked~ul {
       display: block;
-    
-      li.categoria{
+
+      li.categoria {
         display: block;
         float: none;
       }
