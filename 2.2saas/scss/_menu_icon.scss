@@ -2,6 +2,7 @@
   display: none;
   font-size: 24px;
   cursor: pointer;
+  padding-left: 0.5em;
 }
 #menu-toggle {
   display: none;
@@ -18,9 +19,12 @@
         display: none;
       }
     }
-    &:active(#menu-toggle){
-      ul {
+    #menu-toggle:checked ~ ul {
+      display: block;
+    
+      li.categoria{
         display: block;
+        float: none;
       }
     }
   }
