@@ -20,3 +20,9 @@
   animation-duration: $duration;
   animation-timing-function: $timing;
 }
+
+@mixin show-submenu-responsive($breakpoint-responsive){
+  @media (max-width: $breakpoint-responsive){
+    @content
+  }
+}

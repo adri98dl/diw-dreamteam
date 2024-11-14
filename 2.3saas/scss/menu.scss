@@ -42,7 +42,6 @@ ul {
   list-style-type: none;
 }
 
-
 /* Categoría */
 .categoria {
   float: left;
@@ -59,8 +58,16 @@ ul {
   position: absolute;
   overflow: hidden;
   height: 0px;
+  @include mixin.show-submenu-responsive(variables.$breakpoint-responsive){
+    display: block;
+    position: absolute;
+  }
 }
 
 .categoria:hover .submenu {
   height: 100px;
+  @include mixin.show-submenu-responsive(variables.$breakpoint-responsive){
+    display: block;
+    position: absolute;
+  }
 }
