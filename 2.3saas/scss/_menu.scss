@@ -1,6 +1,7 @@
 @use "variables";
 @use "mixin";
 @use "menu_icon";
+
 nav {
   @include mixin.color-textoFondo(
     variables.$color-hover,
@@ -9,6 +10,7 @@ nav {
   position: absolute;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
+
   a {
     @include mixin.color-textoFondo(variables.$color-hover, variables.$gris);
     text-decoration: none;
@@ -18,6 +20,7 @@ nav {
     text-align: center;
     cursor: pointer;
   }
+
   a:hover {
     @include mixin.color-textoFondo(
       variables.$color-hover,
@@ -25,12 +28,14 @@ nav {
     );
     @include mixin.animaciones-nav(iluminar, 0.4s);
   }
+
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     width: 200px;
   }
+
   > ul {
     width: 100%;
     height: 32px;
@@ -42,8 +47,6 @@ ul {
   list-style-type: none;
 }
 
-
-/* Categoría */
 .categoria {
   float: left;
   a {
@@ -53,7 +56,7 @@ ul {
 .categoria:hover > a {
   padding: 10px 20px;
 }
-/* Submenu */
+
 .submenu {
   @include mixin.transiciones-nav(height, 0.5s);
   position: absolute;
@@ -61,6 +64,15 @@ ul {
   height: 0px;
 }
 
-.categoria:hover .submenu {
+ .categoria:hover .submenu {
   height: 100px;
+  
+  @include mixin.show-submenu-responsive(variables.$breakpoint-responsive) {
+    display: block;
+
+    li.categoria {
+      display: block;
+      float: none;
+    }
+  }
 }
