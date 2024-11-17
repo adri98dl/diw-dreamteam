@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 
 @mixin color-textoFondo($color: variables.$color-hover, $fondo: #eee) {
   color: $color;
@@ -21,8 +21,11 @@
   animation-timing-function: $timing;
 }
 
-@mixin show-submenu-responsive($breakpoint-responsive){
-  @media (max-width: $breakpoint-responsive){
-    @content
+
+@mixin show-submenu-responsive($max-width) {
+  @media (max-width: $max-width) {
+    @content;
   }
 }
+
+
