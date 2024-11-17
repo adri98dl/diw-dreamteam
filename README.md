@@ -1,5 +1,5 @@
 <!--# diw-dreamteam-->
-## Proyecto Sass 
+# Proyecto Sass 
 
 Proyecto realizado para su evaluación por:
 
