@@ -21,11 +21,8 @@
   animation-timing-function: $timing;
 }
 
-
 @mixin show-submenu-responsive($max-width) {
   @media (max-width: $max-width) {
     @content;
   }
 }
-
-
