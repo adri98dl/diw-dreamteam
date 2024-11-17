@@ -1,12 +1,12 @@
-# diw-dreamteam
+<!--# diw-dreamteam-->
 ## Proyecto Sass 
 
 Proyecto realizado para su evaluación por:
 
-- Diego Manrique
+- Diego Manrique *[@diegokoes](https://github.com/diegokoes)*
 - Rodrigo Encabo
-- Alejandro Nishiky
-- Adrián Donoso
+- Alejandro Nishiky *[@nishikyr](https://github.com/nishikyr)*
+- Adrián Donoso *[@adri98dl](https://github.com/adri98dl)*
 
 
 Entregado para su reevaluación el día 11 de noviembre de 2024
