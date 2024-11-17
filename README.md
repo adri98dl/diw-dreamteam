@@ -9,7 +9,10 @@ Proyecto realizado para su evaluación por:
 - Adrián Donoso *[@adri98dl](https://github.com/adri98dl)*
 
 
-Entregado para su reevaluación el día 11 de noviembre de 2024
+---
+
+
+Entregado para su evaluación el día 24 de noviembre de 2024
 
 Centro IES Alonso de Avellaneda. Alcalá de Henares, Madrid
 
