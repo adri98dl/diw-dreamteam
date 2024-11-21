@@ -1,9 +1,6 @@
-// screen.scss
-
-@use 'variables';
-@use 'mixin';
-@use 'menu';
-@use 'menu_icon';
+@use "variables";
+@use "mixin";
+@use "menu";
 
 body {
   margin: 0;
@@ -19,7 +16,6 @@ header {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* Footer */
 footer {
   @include mixin.box-sizing(border-box);
   @include mixin.color-textoFondo(variables.$color-hover, variables.$gris);

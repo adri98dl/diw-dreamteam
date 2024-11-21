@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 
 @mixin color-textoFondo($color: variables.$color-hover, $fondo: #eee) {
   color: $color;
