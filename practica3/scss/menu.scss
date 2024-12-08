@@ -1,0 +1,74 @@
+@use "variables";
+@use "mixin";
+
+nav {
+  @include mixin.color-textoFondo(variables.$colorText, variables.$colorBack);
+  position: absolute;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  a {
+    @include mixin.color-textoFondo(variables.$colorText, variables.$colorBack);
+    text-decoration: none;
+    width: 160px;
+    padding: 7px 20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+      background-color: #166cd8;
+      @include mixin.animaciones-nav(iluminar, 0.4s, linear);
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > ul {
+      width: 100%;
+      height: 32px;
+      @include mixin.color-textoFondo(variables.$colorText, variables.$colorBack);
+    }
+
+    &.root {
+      width: 100%;
+      height: 32px;
+      color: #eee;
+    }
+
+    li.categoria {
+      float: left;
+      @include mixin.transiciones-nav(padding, 0.4s, ease-out);
+
+      &:hover > a {
+        padding: 10px 20px;
+      }
+
+      ul.submenu {
+        @include mixin.transiciones-nav(height, 0.5s, ease-out);
+        position: absolute;
+        overflow: hidden;
+        height: 0px;
+
+        li {
+          list-style: none;
+        }
+      }
+
+      &:hover .submenu {
+        height: 100px;
+      }
+    }
+  }
+}
+
+// Responsive a medium: ocultar el menú
+@include responsive(medium) {
+  nav {
+    display: none;
+  }
+}

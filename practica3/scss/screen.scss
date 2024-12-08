@@ -1,0 +1,70 @@
+@use "variables";
+@use "mixin";
+@use "menu";
+@use "contenido";
+
+@keyframes iluminar {
+  from {
+    background-color: #15a;
+    color: #eee;
+  }
+  to {
+    background-color: #166cd8;
+    color: #fff;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 12px 30px;
+  color: #444;
+  font-size: 1.8em;
+  background-color: #eee;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer {
+  @include mixin.box-sizing(border-box);
+  color: variables.$colorText;
+  background-color: variables.$colorBackHover;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+}
+
+i {
+  background: url('../images/icons-sc0e7396e66.png');
+  display: inline-block;
+}
+
+.icon-contact {
+  background-position: 0 0;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-menu {
+  background-position: 0 -30px;
+  width: 54px;
+  height: 50px;
+}
+
+.icon-news {
+  background-position: 0 -80px;
+  width: 39px;
+  height: 30px;
+}
+
+.icon-studies {
+  background-position: 0 -110px;
+  width: 44px;
+  height: 30px;
+}

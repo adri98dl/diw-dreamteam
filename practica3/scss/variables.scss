@@ -1,0 +1,9 @@
+$colorText: #eee;
+$colorBack: #15a; // Antes $gris, ahora el fondo principal
+$colorTextHover: lighten($colorText, 10%);
+$colorBackHover: lighten($colorBack, 10%);
+$colorTitulo: darken($colorBack, 10%);
+
+// Breakpoints
+$breakpoint-responsive-medium: 1024px;
+$breakpoint-responsive-small: 800px;
