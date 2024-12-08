@@ -67,7 +67,7 @@ nav {
 }
 
 // Responsive a medium: ocultar el menú
-@include responsive(medium) {
+@include mixin.responsive(medium) {
   nav {
     display: none;
   }

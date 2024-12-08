@@ -23,7 +23,7 @@
 #contenido {
   padding: 30px 20px;
 
-  @include responsive(medium) {
+  @include mixin.responsive(medium) {
     padding: 10px 20px;
   }
 
@@ -44,7 +44,7 @@
       }
     }
 
-    @include responsive(small) {
+    @include mixin.responsive(small) {
       float: none;
       width: 100%;
     }
@@ -61,7 +61,7 @@
       font-size: 1.6em;
     }
 
-    @include responsive(small) {
+    @include mixin.responsive(small) {
       margin-left: 0;
       width: 100%;
     }
