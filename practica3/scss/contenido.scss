@@ -1,5 +1,6 @@
 @use "variables";
 @use "mixin";
+@use "sass:color";
 
 %button-block {
   box-sizing: border-box;
@@ -72,7 +73,34 @@
     color: #fff;
 
     &:hover {
-      background-color: lighten(variables.$colorBack, 20%);
+      background-color: color.adjust(variables.$colorBack, $lightness: 20%);
+
+      //background-color: lighten(variables.$colorBack, 20%);
+
     }
   }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+  }
+
+  .icon-news {
+    background-image: url('../icons/news.png');
+  }
+
+  .icon-studies {
+    background-image: url('../icons/studies.png');
+  }
+
+  .icon-contact {
+    background-image: url('../icons/contact.png');
+  }
+
+
 }
