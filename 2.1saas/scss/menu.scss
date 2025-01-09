@@ -50,9 +50,9 @@ ul {
   }
 }
 
-.categoria:hover>a {
+/*.categoria:hover>a {
   padding: 10px 20px;
-}
+}*/
 
 .submenu {
   @include mixin.transiciones-nav(height, 0.5s);
