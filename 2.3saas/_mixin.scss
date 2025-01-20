@@ -1,0 +1,39 @@
+@mixin color_fondo($colorTexto, $colorFondo) {
+    color: $colorTexto;
+    background-color: $colorFondo;
+}
+
+@mixin color_fondo_hover($colorTextoHover, $colorFondoHover) {
+    &:hover {
+        color: $colorTextoHover;
+        background-color: $colorFondoHover;
+    }
+}
+
+@mixin boxSizing($box) {
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    box-sizing: $box;
+
+}
+
+@mixin transiciones($property, $duration, $timing: linear) {
+    -webkit-transition: #{$property} #{$duration} #{$timing};
+    -moz-transition: #{$property} #{$duration} #{$timing};
+    transition: #{$property} #{$duration} #{$timing};
+}
+
+@mixin animaciones($name, $duration, $timing: linear) {
+    -webkit-animation: #{$name} #{$duration} #{$timing};
+    -moz-animation: #{$name} #{$duration} #{$timing};
+    animation: #{$name} #{$duration} #{$timing};
+}
+
+@mixin show-submenu-responsive() {
+    @media (max-width: $breakpoint-responsive) {
+        display: block;
+        float: left;
+        position: absolute;
+        margin-left: 200px;
+    }
+}
