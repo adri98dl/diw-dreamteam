@@ -34,7 +34,7 @@ nav {
   >ul {
     width: 100%;
     height: 32px;
-    @include mixin.color-textoFondo(variables.$color-hover, variables.$color-fo);
+    @include mixin.color-textoFondo(variables.$color-hover, variables.$color-fondo);
   }
 }
 
@@ -50,9 +50,9 @@ ul {
   }
 }
 
-/*.categoria:hover>a {
-  padding: 10px 20px;
-}*/
+// .categoria:hover>a {
+//   padding: 10px 20px;
+// }
 
 .submenu {
   @include mixin.transiciones-nav(height, 0.5s);
@@ -63,4 +63,13 @@ ul {
 
 .categoria:hover .submenu {
   height: 100px;
+}
+
+
+#menu-toggle {
+  display: none; // Oculta completamente el input.
+}
+
+.menu-icon {
+  display: none; // Oculta el label asociado al input.
 }
